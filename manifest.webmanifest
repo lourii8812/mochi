@@ -1,0 +1,1 @@
+{"name":"Mochi! Virtual Pet","short_name":"Mochi!","description":"Take care of your tiny virtual friend.","start_url":"./","scope":"./","display":"standalone","background_color":"#100f21","theme_color":"#17142e","icons":[{"src":"assets/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}

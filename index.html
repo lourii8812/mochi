@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#17142e"><meta name="description" content="Take care of your tiny virtual friend in Mochi!">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+<title>Mochi! — Your tiny little world</title>
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar"><a class="brand" href="#" aria-label="Mochi home"><span class="brand-icon">✦</span><span>mochi<span class="brand-dot">!</span></span></a><div class="wallet"><span>✦</span><b id="coins">120</b><button id="open-shop" class="coin-plus" aria-label="Open shop">＋</button></div></header>
+  <main>
+    <section class="pet-section" aria-label="Your pet">
+      <div class="pet-heading"><div><p class="eyebrow" id="greeting">YOUR LITTLE WORLD</p><h1><span id="pet-name-heading">Mochi</span><span class="sparkle"> ✧</span></h1><p class="pet-subtitle" id="pet-mood">Your tiny friend is happy to see you.</p></div><button id="rename-button" class="round-icon" aria-label="Rename pet" title="Rename pet">✎</button></div>
+      <div class="scene" id="scene"><div class="moon"></div><div class="star star-a">✦</div><div class="star star-b">✧</div><div class="star star-c">·</div><div class="cloud cloud-a"></div><div class="cloud cloud-b"></div>
+        <div class="pet-shadow"></div>
+        <button class="pet" id="pet" aria-label="Pet Mochi"><span class="pet-blush blush-l"></span><span class="pet-blush blush-r"></span><span class="pet-eye eye-l"></span><span class="pet-eye eye-r"></span><span class="pet-mouth"></span><span class="pet-belly"></span><span class="pet-accessory" id="pet-accessory"></span></button>
+        <div class="pet-emote" id="pet-emote" aria-live="polite">♡</div><div class="ground"></div>
+        <div class="scene-label"><span class="online-dot"></span> HOME SWEET HOME</div>
+      </div>
+      <div class="level-row"><div class="level-badge"><span>LV</span><b id="level">1</b></div><div class="xp-wrap"><div class="xp-label"><span>Growing together</span><span id="xp-text">0 / 100 XP</span></div><div class="xp-track"><div id="xp-fill" class="xp-fill"></div></div></div><span class="days-badge">☾ <b id="days">Day 1</b></span></div>
+    </section>
+    <section class="needs-section"><div class="section-heading"><div><p class="eyebrow">HOW'S YOUR BUDDY?</p><h2>Pet care</h2></div><span class="tiny-note">A little love goes a long way ♡</span></div>
+      <div class="needs-grid">
+        <article class="need-card"><div class="need-icon food-icon">♡</div><div class="need-info"><div class="need-title"><b>Fullness</b><span id="food-value">80%</span></div><div class="need-track"><div id="food-bar" class="need-fill food-fill"></div></div></div></article>
+        <article class="need-card"><div class="need-icon happy-icon">☻</div><div class="need-info"><div class="need-title"><b>Happiness</b><span id="happy-value">85%</span></div><div class="need-track"><div id="happy-bar" class="need-fill happy-fill"></div></div></div></article>
+        <article class="need-card"><div class="need-icon clean-icon">✧</div><div class="need-info"><div class="need-title"><b>Cleanliness</b><span id="clean-value">90%</span></div><div class="need-track"><div id="clean-bar" class="need-fill clean-fill"></div></div></div></article>
+        <article class="need-card"><div class="need-icon energy-icon">☾</div><div class="need-info"><div class="need-title"><b>Energy</b><span id="energy-value">75%</span></div><div class="need-track"><div id="energy-bar" class="need-fill energy-fill"></div></div></div></article>
+      </div>
+    </section>
+    <section class="actions-section"><div class="section-heading"><div><p class="eyebrow">THE LOVE LANGUAGE</p><h2>Take care</h2></div></div><div class="action-grid">
+      <button class="action-card" data-action="feed"><span class="action-art food-art">🍓</span><b>Feed</b><small>Snack time!</small><span class="action-cost">− 5 ✦</span></button>
+      <button class="action-card" data-action="bath"><span class="action-art bath-art">🫧</span><b>Bath</b><small>Squeaky clean</small><span class="action-cost free">FREE</span></button>
+      <button class="action-card" data-action="play"><span class="action-art play-art">🎾</span><b>Play</b><small>Let's have fun</small><span class="action-cost free">FREE</span></button>
+      <button class="action-card" data-action="sleep"><span class="action-art sleep-art">🌙</span><b>Rest</b><small>Recharge a bit</small><span class="action-cost free">FREE</span></button>
+    </div></section>
+    <section class="extra-section"><div class="section-heading"><div><p class="eyebrow">A TINY BIT OF FUN</p><h2>Little activities</h2></div></div><div class="activity-row"><div class="activity-copy"><div class="activity-symbol">🎁</div><div><b>Daily surprise</b><p>A little gift, once a day.</p></div></div><button id="daily-gift" class="small-button">Open gift</button></div><div class="activity-row"><div class="activity-copy"><div class="activity-symbol">🎯</div><div><b>Catch the star</b><p>A tiny game for extra coins.</p></div></div><button id="play-game" class="small-button">Play</button></div></section>
+    <footer>made of stardust & a little bit of love <span>✦</span></footer>
+  </main>
+  <nav class="bottom-nav" aria-label="Main navigation"><button class="nav-item active" data-tab="home"><span>⌂</span><small>Home</small></button><button class="nav-item" data-tab="wardrobe"><span>♧</span><small>Style</small></button><button class="nav-item" data-tab="stats"><span>♡</span><small>Memories</small></button><button class="nav-item" data-tab="settings"><span>⚙</span><small>Settings</small></button></nav>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="modal-backdrop" id="modal-backdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="modal-close" aria-label="Close">×</button><div id="modal-content"></div></section></div>
+<script src="app.js"></script>
+</body></html>
